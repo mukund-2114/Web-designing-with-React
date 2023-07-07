@@ -10,6 +10,13 @@
             /* color: red;
             background-color: yellow; */
         }
+        .world{
+            color: red;
+        }
+        .temp{
+           background-color: blue; 
+           font-size: 50px;
+        }
        </style>
     </head>
     <body>
@@ -21,6 +28,9 @@
         <h5 class="myclass">Heading 5</h5>
         <h5 class="myclass">Heading 5</h5>
         <h6 id="myid2">heading 6</h6>
+        <p id="hello" class="world">hello world</p>
+        <button onclick="test()">Submit</button>
+
     </body>
     <script>
         // document.write("Hello world");
@@ -168,14 +178,79 @@
         //arrays : to store multiple values in one variable
                     // should be of same datatype
 
-        var age = [1,2,3,4,5,6,7,8,9,10];// age[9]
+        // var 5age = [1,2,3,4,5,6,7,8,9,10];// age[9]
 
-        var names= ['name1', "name2", "name3", "name4", age]
-        console.log(names[4][9])
-        console.log(age[9])
+        // var names= ['name1', "name2", "name3", "name4", age]
+        // console.log(names[4][9])
+        // console.log(age[9])
         // console.log(age[9]);
         // console.log(names[3]);
 
+        function calculator(a,b,c){
+            // if(c == '+'){
+            //     console.log("addition",a+b);
+            // }
+            // else if(c == '-'){
+            //     console.log("subtraction",a-b);
+            // }
+            // else if(c == '*'){
+            //     console.log("mutliplication",a*b);
+            // }
+            // else if(c == '/'){
+            //     console.log("division",a/b);
+            // }
+            // else{
+            //     console.log("invalid");
+            // }
+            switch(c){
+                case '+':console.log("addition",a+b);break;
+                case '-':console.log("addition",a-b);break;
+                case '*':console.log("addition",a*b);break;
+                case '/':console.log("addition",a/b);break;
+                default:console.log("invalid");
+            }
+            
+        }
+        // calculator(2,6,'+')
+        // calculator(5,2,'*')
 
-    </script>
+        // function test(){
+        //     // document.getElementById('hello').innerHTML = "content changed";
+        //     // document.getElementById('hello').style.color = "red";
+        //     // document.getElementById('hello').style.backgroundColor = "yellow";
+        //     document.getElementById('hello').classList.add("temp");
+        // }
+
+        var name = "Helo world";
+        // console.log(name.length);
+
+        // for(var i = 0;i<name.length;i++){
+        //     console.log(name[i]);
+        // }
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+
+        console.log(name.slice(5)); // to cut the starting characters
+
+        var name = "Helo world";
+        //substring method:
+        console.log(name.substring(2,7));
+
+        //substr method;
+        console.log(name.substr(2,4)); 
+        //2nd parameter length of the string
+
+        // var name1 = "      hello there,hello world"+"hello";
+        // // console.log(name1.replace("hello","hii"));
+        // console.log(name1.replaceAll("hello","hii"));
+        // console.log(name1.charAt(6));
+        // console.log(name1.trim());
+        // console.log(name1.concat("hi"));
+
+        print the reverse of the string (hello->olleh)
+        palindrome (madam ,abba)
+
+
+
+    </script>       
 </html>
